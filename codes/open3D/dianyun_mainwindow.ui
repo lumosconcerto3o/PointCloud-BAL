@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>969</width>
+    <height>810</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Point Cloud Select Tool</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="15,1">
+        <item>
+         <widget class="OpenGLWidget" name="widget_1" native="true">
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:1px solid rgb(0, 0, 0);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,1,1,2">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+          <widget class="QPushButton" name="labeling_1">
+            <property name="focusPolicy">
+             <enum>Qt::StrongFocus</enum>
+            </property>
+            <property name="text">
+             <string>Labeling</string>
+            </property>
+           </widget>
+          </item>
+         <item>
+           <widget class="QPushButton" name="jieshudianxuan">
+            <property name="text">
+             <string>End selection</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="15,1">
+        <item>
+         <widget class="OpenGLWidget_2" name="widget_2" native="true">
+          <property name="styleSheet">
+           <string notr="true">border:1px solid rgb(0, 0, 0);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,1,2">
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>Display</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>969</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_1">
+    <property name="title">
+     <string>Open file</string>
+    </property>
+    <addaction name="duquwenjian_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Denoising</string>
+    </property>
+    <addaction name="jiangzao"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Save editor </string>
+    </property>
+    <addaction name="baocunwenjian_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Save displayer</string>
+    </property>
+    <addaction name="baocundianyunyou"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Save viewpoint</string>
+    </property>
+    <addaction name="baocunchuanghu"/>
+   </widget>
+   <addaction name="menu_1"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <action name="duquwenjian">
+   <property name="text">
+    <string>Open file</string>
+   </property>
+  </action>
+  <action name="duquwenjian_2">
+   <property name="text">
+    <string>Open file</string>
+   </property>
+  </action>
+  <action name="jiangzao">
+   <property name="text">
+    <string>Denoising</string>
+   </property>
+  </action>
+  <action name="baocunwenjian">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="baocunwenjian_2">
+   <property name="text">
+    <string>Save denoised .ply</string>
+   </property>
+  </action>
+  <action name="baocundianyunyou">
+   <property name="text">
+    <string>Save whole selection as object</string>
+   </property>
+  </action>
+  <action name="baocunchuanghu">
+   <property name="text">
+    <string>Save last selection object</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OpenGLWidget</class>
+   <extends>QWidget</extends>
+   <header>opengl</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>OpenGLWidget_2</class>
+   <extends>QWidget</extends>
+   <header>opengl_2</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
